@@ -83,8 +83,8 @@ export default function Skills() {
       className="py-10 sm:py-20 relative overflow-hidden min-h-[520px] sm:min-h-[700px] lg:min-h-[820px] flex items-center justify-center select-none"
     >
       {/* Background ambient radial aura */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[550px] sm:w-[750px] h-[450px] sm:h-[600px] bg-indigo-600/10 rounded-full blur-[140px] sm:blur-[170px] pointer-events-none" />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[380px] sm:w-[500px] h-[300px] sm:h-[400px] bg-cyan-500/10 rounded-full blur-[120px] sm:blur-[150px] pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[550px] sm:w-[750px] h-[450px] sm:h-[600px] bg-emerald-600/8 rounded-full blur-[140px] sm:blur-[170px] pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[380px] sm:w-[500px] h-[300px] sm:h-[400px] bg-green-500/6 rounded-full blur-[120px] sm:blur-[150px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-3 sm:px-4 w-full relative h-[480px] sm:h-[650px] lg:h-[760px] flex items-center justify-center">
         
@@ -100,13 +100,13 @@ export default function Skills() {
         ))}
 
         {/* Central Focus Card (Render.com Style - Clean, Compact & Mobile-Optimized) */}
-        <div className="relative z-20 max-w-[190px] sm:max-w-xs md:max-w-sm text-center px-4 py-3.5 sm:px-8 sm:py-7 rounded-2xl sm:rounded-3xl bg-[#090a14]/95 backdrop-blur-2xl border border-indigo-500/30 shadow-2xl shadow-black/90">
+        <div className="relative z-20 max-w-[190px] sm:max-w-xs md:max-w-sm text-center px-4 py-3.5 sm:px-8 sm:py-7 rounded-2xl sm:rounded-3xl bg-black/95 backdrop-blur-2xl border border-emerald-500/30 shadow-2xl shadow-black">
           {/* Radiant Top Line */}
-          <div className="absolute inset-x-0 top-0 h-[2px] bg-gradient-to-r from-transparent via-cyan-400 via-[#ff5e3a] to-transparent" />
+          <div className="absolute inset-x-0 top-0 h-[2px] bg-gradient-to-r from-transparent via-emerald-400 to-transparent" />
 
           {/* Developer Monospace Section Indicator */}
-          <div className="inline-flex items-center gap-1.5 sm:gap-2 px-2.5 py-1 sm:px-3.5 sm:py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/30 font-mono text-[10px] sm:text-xs text-cyan-300 mb-2 sm:mb-3">
-            <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 shadow-[0_0_8px_#22d3ee]" />
+          <div className="inline-flex items-center gap-1.5 sm:gap-2 px-2.5 py-1 sm:px-3.5 sm:py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 font-mono text-[10px] sm:text-xs text-emerald-400 mb-2 sm:mb-3">
+            <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 shadow-[0_0_8px_#10b981]" />
             <span>// 02. stack</span>
           </div>
 

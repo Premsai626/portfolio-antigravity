@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import CinematicIntro from './components/intro/CinematicIntro';
 import BackgroundScene from './components/ui/BackgroundScene';
+import CustomCursor from './components/ui/CustomCursor';
 import Navbar from './components/navigation/Navbar';
 import Hero from './components/hero/Hero';
 import About from './components/about/About';
@@ -11,6 +12,8 @@ import Certificates from './components/certificates/Certificates';
 import GithubSection from './components/github/GithubSection';
 import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
+import TerminalDrawer from './components/ui/TerminalDrawer';
+import MatrixRain from './components/ui/MatrixRain';
 
 export default function App() {
   const [introFinished, setIntroFinished] = useState(false);
@@ -26,6 +29,12 @@ export default function App() {
 
       {/* 2. Global Interactive Background Scene (Grid + Particles + Cursor Spotlight) */}
       <BackgroundScene />
+
+      {/* Interactive Matrix Digital Rain Overlay */}
+      <MatrixRain />
+
+      {/* Custom HUD Targeting Ring Cursor */}
+      <CustomCursor />
 
       {/* 3. Navigation */}
       <Navbar />
@@ -56,6 +65,9 @@ export default function App() {
 
       {/* 10. Footer */}
       <Footer />
+
+      {/* Interactive Cyber Terminal CLI */}
+      <TerminalDrawer />
     </div>
   );
 }

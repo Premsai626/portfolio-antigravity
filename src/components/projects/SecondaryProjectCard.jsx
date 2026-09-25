@@ -6,41 +6,41 @@ import PixelCard from '../ui/PixelCard';
 
 const projectThemes = {
   'vibe-tune': {
-    pixelVariant: "purple",
-    cardBg: "from-fuchsia-950/30 via-slate-900/70 to-slate-950/90",
-    border: "border-fuchsia-500/30 hover:border-pink-400/60",
-    glow: "hover:shadow-[0_0_30px_rgba(236,72,153,0.25)]",
-    iconBg: "bg-fuchsia-500/15 border-fuchsia-500/30 text-fuchsia-300",
-    categoryColor: "text-fuchsia-400",
-    tagStyle: "bg-fuchsia-500/10 text-fuchsia-200 border-fuchsia-500/20",
-    topHighlight: "from-transparent via-fuchsia-400 to-transparent",
-    hoverArrow: "group-hover:text-fuchsia-300",
+    pixelVariant: "emerald",
+    cardBg: "from-emerald-950/30 via-black to-black",
+    border: "border-emerald-500/25 hover:border-emerald-400/70",
+    glow: "hover:shadow-[0_0_30px_rgba(16,185,129,0.25)]",
+    iconBg: "bg-emerald-500/10 border-emerald-500/30 text-emerald-400",
+    categoryColor: "text-emerald-400",
+    tagStyle: "bg-emerald-500/10 text-emerald-300 border-emerald-500/25",
+    topHighlight: "from-transparent via-emerald-400 to-transparent",
+    hoverArrow: "group-hover:text-emerald-300",
     note: "✦ Webcam tracking + 432Hz audio",
     icon: Headphones
   },
   'faq-chatbot': {
-    pixelVariant: "cyan",
-    cardBg: "from-purple-950/30 via-slate-900/70 to-slate-950/90",
-    border: "border-purple-500/30 hover:border-purple-400/60",
-    glow: "hover:shadow-[0_0_30px_rgba(168,85,247,0.25)]",
-    iconBg: "bg-purple-500/15 border-purple-500/30 text-purple-300",
-    categoryColor: "text-purple-400",
-    tagStyle: "bg-purple-500/10 text-purple-200 border-purple-500/20",
-    topHighlight: "from-transparent via-purple-400 to-transparent",
-    hoverArrow: "group-hover:text-purple-300",
+    pixelVariant: "emerald",
+    cardBg: "from-green-950/30 via-black to-black",
+    border: "border-emerald-500/25 hover:border-emerald-400/70",
+    glow: "hover:shadow-[0_0_30px_rgba(16,185,129,0.25)]",
+    iconBg: "bg-emerald-500/10 border-emerald-500/30 text-emerald-400",
+    categoryColor: "text-emerald-400",
+    tagStyle: "bg-emerald-500/10 text-emerald-300 border-emerald-500/25",
+    topHighlight: "from-transparent via-emerald-400 to-transparent",
+    hoverArrow: "group-hover:text-emerald-300",
     note: "✦ Fast contextual query answering",
     icon: MessageSquare
   },
   'smart-car': {
     pixelVariant: "emerald",
-    cardBg: "from-teal-950/30 via-slate-900/70 to-slate-950/90",
-    border: "border-teal-500/30 hover:border-emerald-400/60",
-    glow: "hover:shadow-[0_0_30px_rgba(20,184,166,0.25)]",
-    iconBg: "bg-teal-500/15 border-teal-500/30 text-teal-300",
-    categoryColor: "text-teal-400",
-    tagStyle: "bg-teal-500/10 text-teal-200 border-teal-500/20",
-    topHighlight: "from-transparent via-teal-400 to-transparent",
-    hoverArrow: "group-hover:text-teal-300",
+    cardBg: "from-teal-950/30 via-black to-black",
+    border: "border-emerald-500/25 hover:border-emerald-400/70",
+    glow: "hover:shadow-[0_0_30px_rgba(16,185,129,0.25)]",
+    iconBg: "bg-emerald-500/10 border-emerald-500/30 text-emerald-400",
+    categoryColor: "text-emerald-400",
+    tagStyle: "bg-emerald-500/10 text-emerald-300 border-emerald-500/25",
+    topHighlight: "from-transparent via-emerald-400 to-transparent",
+    hoverArrow: "group-hover:text-emerald-300",
     note: "✦ Ultrasonic distance telemetry",
     icon: Car
   }
@@ -75,12 +75,12 @@ export default function SecondaryProjectCard({ project }) {
                 href={project.links.demo}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-semibold bg-white/10 hover:bg-white/20 text-white border border-white/20 transition-all shadow-sm"
+                className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-semibold bg-emerald-500/15 hover:bg-emerald-500/25 text-emerald-300 border border-emerald-500/30 transition-all shadow-sm"
                 aria-label={`Open ${project.title} live demo`}
               >
-                <Sparkles className="w-3 h-3 text-cyan-300" />
+                <Sparkles className="w-3 h-3 text-emerald-400" />
                 <span>Live</span>
-                <ExternalLink className="w-3 h-3 text-cyan-300" />
+                <ExternalLink className="w-3 h-3 text-emerald-400" />
               </a>
             )}
             <a
@@ -135,7 +135,7 @@ export default function SecondaryProjectCard({ project }) {
               href={project.links.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-slate-400 hover:text-white transition-colors p-1"
+              className="text-slate-400 hover:text-emerald-400 transition-colors p-1"
               aria-label={`View ${project.title} on GitHub`}
             >
               <Github className="w-4 h-4" />

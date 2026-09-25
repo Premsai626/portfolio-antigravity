@@ -11,11 +11,11 @@ export default function Hero() {
       id="hero"
       className="relative min-h-screen pt-24 sm:pt-32 pb-14 sm:pb-20 flex items-center justify-center overflow-hidden"
     >
-      {/* Dynamic Multi-Color Ambient Glow Lighting with Electric Sunset */}
-      <div className="absolute top-1/4 left-1/4 w-[480px] h-[480px] bg-indigo-600/15 rounded-full blur-[140px] pointer-events-none" />
-      <div className="absolute top-1/3 right-1/4 w-[520px] h-[520px] bg-cyan-500/12 rounded-full blur-[150px] pointer-events-none" />
-      <div className="absolute top-1/2 left-1/3 w-[380px] h-[380px] bg-[#ff3b11]/8 rounded-full blur-[140px] pointer-events-none" />
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 w-[600px] h-[350px] bg-purple-600/10 rounded-full blur-[160px] pointer-events-none" />
+      {/* Dynamic Matrix Hacker Ambient Glow Lighting */}
+      <div className="absolute top-1/4 left-1/4 w-[480px] h-[480px] bg-emerald-600/12 rounded-full blur-[140px] pointer-events-none" />
+      <div className="absolute top-1/3 right-1/4 w-[520px] h-[520px] bg-green-500/10 rounded-full blur-[150px] pointer-events-none" />
+      <div className="absolute top-1/2 left-1/3 w-[380px] h-[380px] bg-emerald-500/8 rounded-full blur-[140px] pointer-events-none" />
+      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 w-[600px] h-[350px] bg-teal-600/8 rounded-full blur-[160px] pointer-events-none" />
 
       <div className="max-w-6xl mx-auto px-5 sm:px-6 w-full relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-8 items-center">
@@ -28,7 +28,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="inline-flex items-center gap-2 px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-300 w-fit mb-4 sm:mb-6 shadow-[0_0_15px_rgba(16,185,129,0.15)]"
+              className="inline-flex items-center gap-2 px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/35 text-emerald-400 w-fit mb-4 sm:mb-6 shadow-[0_0_15px_rgba(16,185,129,0.25)]"
             >
               <span className="relative flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
@@ -43,10 +43,10 @@ export default function Hero() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="font-heading text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-[1.05]"
             >
-              <span className="bg-gradient-to-r from-white via-slate-100 to-indigo-200 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-white via-slate-100 to-emerald-200 bg-clip-text text-transparent">
                 PREM
               </span>{" "}
-              <span className="bg-gradient-to-r from-indigo-300 via-cyan-300 to-emerald-300 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-emerald-400 via-green-300 to-teal-300 bg-clip-text text-transparent drop-shadow-[0_0_30px_rgba(16,185,129,0.35)]">
                 SAI
               </span>
             </motion.h1>
@@ -67,9 +67,9 @@ export default function Hero() {
               transition={{ duration: 0.7, delay: 0.45 }}
               className="flex items-center gap-3 mt-3 sm:mt-4 text-[11px] sm:text-xs font-mono text-slate-400"
             >
-              <span>📍 {portfolio.location}</span>
+              <span className="text-emerald-400">📍 {portfolio.location}</span>
               <span className="text-slate-600">•</span>
-              <span>🎓 MLRIT CSM</span>
+              <span className="text-emerald-400">🎓 MLRIT CSM</span>
             </motion.div>
 
             {/* CTAs */}
@@ -85,10 +85,10 @@ export default function Hero() {
                 whileHover="hover"
                 whileTap="tap"
                 href="#projects"
-                className="inline-flex items-center gap-2 px-5 py-2.5 sm:px-7 sm:py-3.5 rounded-full bg-gradient-to-r from-indigo-500 via-cyan-500 to-emerald-400 text-slate-950 font-semibold text-xs sm:text-sm shadow-[0_0_25px_rgba(56,189,248,0.4)] hover:shadow-[0_0_35px_rgba(255,94,58,0.5)] transition-all"
+                className="inline-flex items-center gap-2 px-5 py-2.5 sm:px-7 sm:py-3.5 rounded-full bg-gradient-to-r from-emerald-500 via-green-400 to-emerald-400 text-black font-bold text-xs sm:text-sm shadow-[0_0_25px_rgba(16,185,129,0.5)] hover:shadow-[0_0_35px_rgba(0,255,136,0.7)] transition-all"
               >
                 <span>{portfolio.hero.primaryAction.label}</span>
-                <ArrowDown className="w-4 h-4 text-slate-950" />
+                <ArrowDown className="w-4 h-4 text-black" />
               </motion.a>
 
               <motion.a
@@ -97,10 +97,10 @@ export default function Hero() {
                 whileHover="hover"
                 whileTap="tap"
                 href="#contact"
-                className="inline-flex items-center gap-2 px-5 py-2.5 sm:px-7 sm:py-3.5 rounded-full bg-slate-900/80 hover:bg-indigo-950/40 text-cyan-200 border border-cyan-500/30 hover:border-cyan-400/60 text-xs sm:text-sm font-medium transition-all shadow-[0_0_15px_rgba(6,182,212,0.1)]"
+                className="inline-flex items-center gap-2 px-5 py-2.5 sm:px-7 sm:py-3.5 rounded-full bg-black/90 hover:bg-emerald-950/40 text-emerald-300 border border-emerald-500/40 hover:border-emerald-400/80 text-xs sm:text-sm font-medium transition-all shadow-[0_0_15px_rgba(16,185,129,0.2)]"
               >
                 <span>{portfolio.hero.secondaryAction.label}</span>
-                <ArrowUpRight className="w-4 h-4 text-cyan-400" />
+                <ArrowUpRight className="w-4 h-4 text-emerald-400" />
               </motion.a>
             </motion.div>
           </div>
@@ -110,10 +110,10 @@ export default function Hero() {
             
             {/* Handwritten callout pointing to portrait */}
             <div className="absolute -top-8 -left-4 sm:-top-10 sm:-left-10 hidden sm:flex items-center gap-2 pointer-events-none z-20">
-              <span className="font-note text-xl md:text-2xl text-amber-300 font-semibold tracking-wide transform -rotate-6 drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]">
+              <span className="font-note text-xl md:text-2xl text-emerald-400 font-semibold tracking-wide transform -rotate-6 drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]">
                 Hey, I'm Prem ✦
               </span>
-              <svg className="w-8 h-8 text-amber-300 transform rotate-12" viewBox="0 0 40 40" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
+              <svg className="w-8 h-8 text-emerald-400 transform rotate-12" viewBox="0 0 40 40" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
                 <path d="M5,10 Q20,5 30,25 M22,25 L30,25 L30,17" />
               </svg>
             </div>
@@ -124,11 +124,11 @@ export default function Hero() {
               animate="visible"
               className="relative group w-full max-w-[220px] sm:max-w-[320px] md:max-w-[380px] aspect-[4/5]"
             >
-              {/* Vibrant ambient color glow aura behind the portrait */}
-              <div className="absolute -inset-2 bg-gradient-to-tr from-indigo-500/35 via-cyan-400/30 via-[#ff5e3a]/25 to-emerald-400/35 rounded-3xl blur-2xl opacity-75 group-hover:opacity-100 transition-opacity duration-500" />
+              {/* Vibrant ambient green glow aura behind the portrait */}
+              <div className="absolute -inset-2 bg-gradient-to-tr from-emerald-500/40 via-green-400/30 to-teal-400/35 rounded-3xl blur-2xl opacity-75 group-hover:opacity-100 transition-opacity duration-500" />
 
               {/* Portrait Container */}
-              <div className="relative w-full h-full rounded-2xl overflow-hidden border border-white/15 bg-slate-900 shadow-2xl">
+              <div className="relative w-full h-full rounded-2xl overflow-hidden border border-emerald-500/30 bg-black shadow-2xl">
                 <img
                   src={portraitImg}
                   alt="Prem Sai"
@@ -136,8 +136,8 @@ export default function Hero() {
                 />
                 
                 {/* Subtle cyber scanline & gradient overlays */}
-                <div className="absolute inset-0 bg-gradient-to-t from-[#09090b] via-transparent to-transparent opacity-80" />
-                <div className="absolute inset-0 bg-gradient-to-tr from-indigo-950/30 via-transparent to-cyan-950/20 mix-blend-color" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80" />
+                <div className="absolute inset-0 bg-gradient-to-tr from-emerald-950/30 via-transparent to-green-950/20 mix-blend-color" />
               </div>
             </motion.div>
           </div>

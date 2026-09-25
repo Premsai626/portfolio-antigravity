@@ -177,8 +177,8 @@ export default function Certificates3DVault({
                 }}
                 className={`rounded-2xl flex flex-col justify-between overflow-hidden backdrop-blur-xl transition-shadow duration-300 ${
                   isFront 
-                    ? 'bg-gradient-to-b from-slate-900/95 via-[#0b0e17]/95 to-[#05070e]/95 border-2 border-cyan-400/70 shadow-[0_0_35px_rgba(6,182,212,0.35)] ring-1 ring-cyan-400/30' 
-                    : 'bg-gradient-to-b from-slate-900/80 to-[#0b0e17]/85 border border-slate-800/80 shadow-2xl hover:border-slate-700 cursor-pointer'
+                    ? 'bg-black/95 border-2 border-emerald-400/80 shadow-[0_0_35px_rgba(16,185,129,0.35)] ring-1 ring-emerald-400/30' 
+                    : 'bg-black/85 border border-emerald-500/20 shadow-2xl hover:border-emerald-500/40 cursor-pointer'
                 }`}
               >
                 {/* Certificate Image Frame */}
@@ -192,23 +192,23 @@ export default function Certificates3DVault({
                     loading="lazy"
                     draggable={false}
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0b0e17] via-transparent to-black/30 pointer-events-none" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/30 pointer-events-none" />
 
                   {/* Top floating metadata badges */}
                   <div className="absolute top-2.5 left-2.5 right-2.5 flex items-center justify-between gap-1.5 pointer-events-none text-[10px]">
-                    <span className="px-2 py-0.5 rounded-full bg-slate-950/80 border border-slate-800/90 text-cyan-300 font-mono tracking-wider backdrop-blur-md">
+                    <span className="px-2 py-0.5 rounded-full bg-black/80 border border-emerald-500/30 text-emerald-300 font-mono tracking-wider backdrop-blur-md">
                       {cert.category}
                     </span>
-                    <span className="px-2 py-0.5 rounded-full bg-slate-950/80 border border-slate-800/90 text-slate-300 font-mono flex items-center gap-1 backdrop-blur-md">
-                      <Calendar className="w-2.5 h-2.5 text-cyan-400" />
+                    <span className="px-2 py-0.5 rounded-full bg-black/80 border border-slate-800 text-slate-300 font-mono flex items-center gap-1 backdrop-blur-md">
+                      <Calendar className="w-2.5 h-2.5 text-emerald-400" />
                       {cert.issueDate}
                     </span>
                   </div>
 
                   {/* Front card inspect indicator banner on hover */}
                   {isFront && (
-                    <div className="absolute inset-0 flex items-center justify-center bg-cyan-950/20 opacity-0 hover:opacity-100 transition-opacity backdrop-blur-[2px]">
-                      <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-cyan-400 text-slate-950 text-xs font-bold shadow-lg shadow-cyan-400/40">
+                    <div className="absolute inset-0 flex items-center justify-center bg-emerald-950/20 opacity-0 hover:opacity-100 transition-opacity backdrop-blur-[2px]">
+                      <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-emerald-400 text-black text-xs font-bold shadow-lg shadow-emerald-400/40">
                         <Eye className="w-3.5 h-3.5" />
                         Inspect Credential
                       </span>
@@ -220,7 +220,7 @@ export default function Certificates3DVault({
                 <div className="p-4 sm:p-5 flex-1 flex flex-col justify-between">
                   <div>
                     {/* Issuer */}
-                    <div className="text-[11px] font-mono text-cyan-400/90 font-medium truncate mb-1">
+                    <div className="text-[11px] font-mono text-emerald-400 font-medium truncate mb-1">
                       {cert.issuer}
                     </div>
 
@@ -266,7 +266,7 @@ export default function Certificates3DVault({
                           e.stopPropagation();
                           onSelectCert(cert);
                         }}
-                        className="inline-flex items-center gap-1.5 text-xs font-semibold text-cyan-400 hover:text-cyan-300 transition-colors cursor-pointer"
+                        className="inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-400 hover:text-emerald-300 transition-colors cursor-pointer"
                       >
                         <Eye className="w-3.5 h-3.5" />
                         <span>Inspect</span>
